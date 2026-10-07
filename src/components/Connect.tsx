@@ -1,5 +1,6 @@
 import SecHead from './SecHead'
 import SplitText from './SplitText'
+import Socials from './Socials'
 import { useInView } from '../hooks/useInView'
 
 export default function Connect() {
@@ -14,6 +15,7 @@ export default function Connect() {
             <a className="btn" href="mailto:developer@ahmad-ishanzai.online">Get in touch</a>
             <a className="btn ghost" href="#showcase">Explore my work</a>
           </div>
+          <Socials />
         </div>
       </div>
     </section>
