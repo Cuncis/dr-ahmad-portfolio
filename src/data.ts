@@ -13,6 +13,7 @@ export const navLinks = [
   { id: 'showcase', label: 'Showcase' },
   { id: 'services', label: 'Services' },
   { id: 'experience', label: 'Experience' },
+  { id: 'skills', label: 'Skills' },
   { id: 'credentials', label: 'Credentials' },
   { id: 'memberships', label: 'Memberships' },
 ]
@@ -87,4 +88,14 @@ export const jobs: Job[] = [
     { title: 'Programming with Generative AI Apprentice', org: 'DougleBot',
       text: 'Engaging in specialized technical apprenticeship focusing on generative artificial intelligence programming, intelligent digital system development, and high-throughput data architectures.' },
   ] },
+]
+
+export interface SkillGroup { title: string; label: string; items: string[]; size?: 'wide' | 'full' }
+export const skills: SkillGroup[] = [
+  { title: 'Frontend', label: 'Frontend skills', items: ['TailwindCSS', 'HTML', 'CSS', 'Bootstrap', 'React.js'] },
+  { title: 'Backend', label: 'Backend skills', items: ['Node.js', 'Python', 'Ruby on Rails'] },
+  { title: 'Databases', label: 'Databases skills', items: ['PostgreSQL', 'MongoDB', 'MySQL'] },
+  { title: 'Tools', label: 'Tools skills', size: 'wide', items: ['Git', 'Figma', 'Unreal Engine', 'Sora', 'Kling', 'VS Code', 'Unity', 'Blender'] },
+  { title: 'Creative', label: 'Creative skills', size: 'wide', items: ['Music Production', 'Game Development', 'Game Coding', '3D Animation', 'Generative AI tools'] },
+  { title: 'Languages', label: 'Languages spoken', size: 'full', items: ['Persian-Dari', 'English', 'Urdu', 'French', 'Spanish'] },
 ]
