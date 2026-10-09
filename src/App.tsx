@@ -6,6 +6,8 @@ import Showcase from './components/Showcase'
 import Services from './components/Services'
 import Experience from './components/Experience'
 import Memberships from './components/Memberships'
+import Projects from './components/Projects'
+import Articles from './components/Articles'
 import Skills from './components/Skills'
 import Credentials from './components/Credentials'
 import Connect from './components/Connect'
@@ -22,6 +24,8 @@ export default function App() {
         <Showcase />
         <Services />
         <Experience />
+        <Projects />
+        <Articles />
         <Skills />
         <Credentials />
         <Memberships />
