@@ -23,9 +23,12 @@ export default function Credentials() {
         <SecHead label="Credentials" />
         <div className="creds">
           <SplitText as="h2" mode="mask">Professional Certifications & Credentials</SplitText>
-          <ul className="registry">
-            {creds.map((c) => <CredItem key={c.title} {...c} />)}
-          </ul>
+          <div>
+            <p className="creds-intro">I am an advanced degree candidate pursuing both an MBA and a DBA in Applied AI Management at The University of Digital &amp; AI Management (UniDAIM), building upon my Bachelor of Business Administration (BBA) from the same institution. Dedicated to continuous professional growth, I have earned certifications from a wide array of prestigious institutions—including Harvard, Stanford, Oxford, Duke, and more—through targeted online programs, specialized coursework, and technical seminars.</p>
+            <ul className="registry">
+              {creds.map((c) => <CredItem key={c.title} {...c} />)}
+            </ul>
+          </div>
         </div>
       </div>
     </section>

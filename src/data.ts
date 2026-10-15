@@ -74,7 +74,7 @@ export const services: Service[] = [
 export interface SubJob { title: string; org: string; metas?: string[]; text: string }
 export interface Job { title: string; org?: string; text?: string; subs?: SubJob[] }
 export const jobs: Job[] = [
-  { title: 'Founder & Creative Director', org: 'Cherry Computer Ltd & ShadowFall Studios',
+  { title: 'Founder & Creative Director', org: 'Cherry Computer LTD & ShadowFall Studios',
     text: 'Directing the creative and technical vision of software and game development projects, overseeing mobile app releases (such as Apex Precision: Pro Racing), and managing original IP creation.' },
   { title: 'Honorary Faculty Member & Doctoral Researcher', org: 'UniDAIM (The University of Digital & AI Management)',
     text: 'Serving in an academic faculty capacity while pursuing a Doctor of Business Administration (DBA) in Applied AI Management, bridging advanced management theories with practical AI applications.' },
@@ -82,9 +82,15 @@ export const jobs: Job[] = [
     text: 'Spearheading research and development initiatives focused on artificial intelligence pipelines, quantum-augmented applications, and custom programming architectures.' },
   { title: 'Author & Technical Writer',
     text: 'Publishing specialized monographs, eBooks, and technical research papers on AI programming, software systems, and emerging technologies.' },
-  { title: 'Technical Internships & Apprenticeships', subs: [
+  { title: 'Technical & Game Development Internships', org: 'EasyShiksha / YBI Foundation / Kodacy / EdVyro · 2024 – 2026', subs: [
+    { title: 'Game Development Intern', org: 'EdVyro', metas: ['2026'],
+      text: 'Completed an intensive internship in Game Development, earning an official certificate of completion for designing, prototyping, and executing interactive gameplay systems and mechanics.' },
     { title: 'Technical Internships (C, Java 21, Python, & AI / Machine Learning / Generative AI)', org: 'EasyShiksha / YBI Foundation / Kodacy', metas: ['2024 – 2025'],
       text: 'Completed target enterprise micro-projects focusing on advanced systems structures in Java 21 and object-oriented C paradigms. Implemented deep learning and generative model fine-tuning exercises during AI/ML intensive rotations.' },
+  ] },
+  { title: 'Apprenticeships', subs: [
+    { title: 'Game Project Development Apprentice', org: 'Cleanbrain Group', metas: ['July 2025 – October 2026'],
+      text: 'Successfully completed a 15-month Game Project Development Apprenticeship under the leadership of Founder Chilote Callistus P. Gained hands-on experience in the end-to-end game development lifecycle, including game design, programming, mechanics prototyping, and project coordination. Applied real-world software development workflows and refined interactive design principles to bring creative game concepts to life.' },
     { title: 'Software Developer Apprentice', org: 'Bengalis of New York', metas: ['Oct 2025 – Jan 2026', 'Remote, United States'],
       text: 'Collaborated with development teams on meaningful projects, expanding technical capabilities and contributing to innovative software solutions.' },
     { title: 'Programming with Generative AI Apprentice', org: 'DougleBot',
