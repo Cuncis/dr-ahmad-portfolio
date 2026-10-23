@@ -1,4 +1,4 @@
-import { useState, type CSSProperties } from 'react'
+import { useLayoutEffect, useRef, useState, type CSSProperties } from 'react'
 import SecHead from './SecHead'
 import SplitText from './SplitText'
 import Blocks from './Blocks'
@@ -44,12 +44,43 @@ function ProjectCard({ p, n }: { p: Project; n: number }) {
 }
 
 export default function Projects() {
+  const grid = useRef<HTMLDivElement>(null)
+
+  /* equal card heights per row, measured while collapsed so opening one card never stretches its neighbour */
+  useLayoutEffect(() => {
+    const equalise = () => {
+      const el = grid.current
+      if (!el) return
+      const cards = Array.from(el.children) as HTMLElement[]
+      const open = cards.filter((c) => c.classList.contains('open'))
+      el.classList.add('measuring')
+      open.forEach((c) => c.classList.remove('open'))
+      cards.forEach((c) => { c.style.minHeight = '' })
+      const rows = new Map<number, HTMLElement[]>()
+      cards.forEach((c) => rows.set(c.offsetTop, [...(rows.get(c.offsetTop) ?? []), c]))
+      rows.forEach((row) => {
+        const h = Math.max(...row.map((c) => c.offsetHeight))
+        row.forEach((c) => { c.style.minHeight = h + 'px' })
+      })
+      open.forEach((c) => c.classList.add('open'))
+      el.classList.remove('measuring')
+    }
+    equalise()
+    window.addEventListener('resize', equalise)
+    window.addEventListener('load', equalise)
+    document.fonts?.ready.then(equalise)
+    return () => {
+      window.removeEventListener('resize', equalise)
+      window.removeEventListener('load', equalise)
+    }
+  }, [])
+
   return (
     <section className="block prj" id="projects">
       <div className="wrap">
         <SecHead label="Projects" />
         <SplitText as="h2" mode="mask">Featured Projects</SplitText>
-        <div className="pj-grid">
+        <div className="pj-grid" ref={grid}>
           {projects.map((p, n) => <ProjectCard key={p.title} p={p} n={n} />)}
         </div>
       </div>
