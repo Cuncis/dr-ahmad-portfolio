@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from 'react'
 import { flushSync } from 'react-dom'
-import portrait from '../assets/portrait.jpg'
+import portrait from '../assets/profile.png'
 import { NAME, hudWords, sayLines } from '../data'
 
 const pad = () => (Math.random() * 99 | 0).toString().padStart(2, '0')
