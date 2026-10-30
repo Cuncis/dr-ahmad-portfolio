@@ -321,6 +321,31 @@ export const projects: Project[] = [
   }
 ]
 
+export interface Repo { name: string; title: string; sub: string; text: string; url: string }
+export const repos: Repo[] = [
+  { name: 'CherryScript', title: 'CherryScript', sub: 'Custom Domain-Specific Programming Language & Interpreter',
+    text: 'A custom-engineered programming language and interpreter built from scratch in Python. Designed to streamline data pipelines, execute fast MySQL database querying, power automated H2O AutoML model building, and handle low-level C networking sockets with elegance and efficiency.',
+    url: 'https://github.com/Infinite-Networker/CherryScript' },
+  { name: 'KursarScript', title: 'KursarScript (KSPL)', sub: 'Virtual Economy & Digital Currency Object-Oriented Language',
+    text: 'An object-oriented programming language crafted explicitly for virtual reality economies. KSPL seamlessly orchestrates digital currency management via Virtu-Cards and manages secure Virtual-Terminals within immersive architectures.',
+    url: 'https://github.com/Infinite-Networker/KursarScript' },
+  { name: 'Cherry-Computer---KurOS', title: 'KurOS', sub: 'Custom Operating System Architecture',
+    text: 'An experimental, modular operating system architecture designed to explore low-level systems programming, custom kernel routines, and high-performance hardware-software interfacing.',
+    url: 'https://github.com/Infinite-Networker/Cherry-Computer---KurOS' },
+  { name: 'FlowApp', title: 'FlowApp', sub: 'AI-Enhanced Workflow & Application Organizer',
+    text: 'An intelligent productivity and management platform built to track complex software workflows, employment pipelines, educational milestones, and grant applications with automated efficiency.',
+    url: 'https://github.com/Infinite-Networker/FlowApp' },
+  { name: 'The-All-in-One-App', title: 'The All-in-One App', sub: 'Unified Social Media Management Suite',
+    text: 'A cross-platform social media control center built using React Native and Node.js. Features secure OAuth 2.0 API integrations to streamline content publishing, account monitoring, and analytics tracking from a single dashboard.',
+    url: 'https://github.com/Infinite-Networker/The-All-in-One-App' },
+  { name: 'InsightLoop-AI', title: 'InsightLoop AI', sub: 'Automated Feedback Processing & Sentiment Engine',
+    text: 'An automated data intelligence pipeline powered by Python and SQL. It ingests user feedback at scale, performs deep sentiment analysis, and automatically generates structured analytical reports.',
+    url: 'https://github.com/Infinite-Networker/InsightLoop-AI' },
+  { name: 'Cherry-Social', title: 'Cherry-Social', sub: 'Developer-Centric Open-Source Collaboration Platform',
+    text: 'A sleek, dark-themed social platform tailored for programmers and open-source creators. Built to facilitate high-contrast code sharing, project collaboration, and developer community engagement.',
+    url: 'https://github.com/Infinite-Networker/Cherry-Social' },
+]
+
 export interface Article { source: string; date: string; title: string; url: string; body: Block[] }
 export const articles: Article[] = [
   {

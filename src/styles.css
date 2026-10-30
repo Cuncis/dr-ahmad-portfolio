@@ -494,3 +494,12 @@ footer a:hover{text-decoration:underline}
   .article::before,.article:last-child::after{transform:scaleX(1)!important}
   .pj .bar .stripes{width:72px}
 }
+
+/* ---------- github repositories ---------- */
+.repo-grid{align-items:stretch}
+.repo .pj-body>p{display:block; -webkit-line-clamp:unset; line-clamp:unset; overflow:visible}
+.repo .src .gh{width:18px; height:18px}
+.repo .btn{align-self:flex-start; margin-top:auto; padding:13px 20px!important}
+.btn svg.gh{fill:currentColor; stroke:none}
+.btn:hover svg.gh{transform:none}
+.repo-all{margin-top:clamp(32px,4vw,52px); padding:14px 22px!important}
