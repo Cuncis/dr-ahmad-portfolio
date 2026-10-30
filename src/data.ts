@@ -346,6 +346,15 @@ export const repos: Repo[] = [
     url: 'https://github.com/Infinite-Networker/Cherry-Social' },
 ]
 
+export const venture = {
+  name: 'Cherry Computer LTD',
+  status: 'Upcoming start-up',
+  text: [
+    'Cherry Computer LTD is an upcoming technology venture dedicated to redefining modern computing through custom systems architecture, proprietary programming frameworks, and advanced software ecosystems.',
+    "Driven by a passion for low-level innovation, scalable developer tools, and intelligent automation, Cherry Computer LTD bridges the gap between raw computing capabilities and next-generation software execution, building the foundational tech stack for tomorrow's digital infrastructure.",
+  ],
+}
+
 export interface Article { source: string; date: string; title: string; url: string; body: Block[] }
 export const articles: Article[] = [
   {
