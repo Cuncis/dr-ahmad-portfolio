@@ -8,6 +8,8 @@ import Experience from './components/Experience'
 import Memberships from './components/Memberships'
 import Projects from './components/Projects'
 import Repos from './components/Repos'
+import Motion from './components/Motion'
+import Hub from './components/Hub'
 import Venture from './components/Venture'
 import Articles from './components/Articles'
 import Skills from './components/Skills'
@@ -28,6 +30,8 @@ export default function App() {
         <Experience />
         <Projects />
         <Repos />
+        <Motion />
+        <Hub />
         <Venture />
         <Articles />
         <Skills />

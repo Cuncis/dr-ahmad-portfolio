@@ -74,7 +74,7 @@ export const services: Service[] = [
 export interface SubJob { title: string; org: string; metas?: string[]; text: string }
 export interface Job { title: string; org?: string; text?: string; subs?: SubJob[] }
 export const jobs: Job[] = [
-  { title: 'Founder & Creative Director', org: 'Cherry Computer LTD & ShadowFall Studios',
+  { title: 'Founder & Creative Director', org: 'CHERRY COMPUTER LTD & ShadowFall Studios',
     text: 'Directing the creative and technical vision of software and game development projects, overseeing mobile app releases (such as Apex Precision: Pro Racing), and managing original IP creation.' },
   { title: 'Honorary Faculty Member & Doctoral Researcher', org: 'UniDAIM (The University of Digital & AI Management)',
     text: 'Serving in an academic faculty capacity while pursuing a Doctor of Business Administration (DBA) in Applied AI Management, bridging advanced management theories with practical AI applications.' },
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     "more": [
       {
         "t": "p",
-        "text": "Collaborating closely across Cherry Computer LTD and ShadowFall Studios, directed the end-to-end creative and technical vision—from the conceptualization of specialized tactical squad uniforms and gritty urban battleground environments to the integration of advanced in-game UI HUD elements. Overseeing asset pipelines, visual style consistency, and mechanical design to ensure a seamless and engaging player experience."
+        "text": "Collaborating closely across CHERRY COMPUTER LTD and ShadowFall Studios, directed the end-to-end creative and technical vision—from the conceptualization of specialized tactical squad uniforms and gritty urban battleground environments to the integration of advanced in-game UI HUD elements. Overseeing asset pipelines, visual style consistency, and mechanical design to ensure a seamless and engaging player experience."
       }
     ],
     "skills": [
@@ -346,12 +346,48 @@ export const repos: Repo[] = [
     url: 'https://github.com/Infinite-Networker/Cherry-Social' },
 ]
 
+export const motion = {
+  label: 'Engineering in Motion',
+  title: 'Behind the Code: Engineering in Motion',
+  intro: 'This is the implementation phase of software development, where the focus shifts from abstract concepts to pure programming, system stability, and precise execution. It is the daily reality of modern engineering—translating complex logic into production-ready software systems.',
+  points: [
+    { title: 'Systems Engineering & Optimization',
+      text: 'Spotlighting the process of writing efficient code, refactoring critical algorithms, backend architecture, and managing complex terminal environments for peak performance.' },
+    { title: 'Modern Developer Tooling',
+      text: 'From advanced IDE environments to automated pipeline deployments, these are the exact cutting-edge toolsets and workflows utilized to build resilient software.' },
+  ],
+  close: 'This isn’t just a showcase of finished applications; it is a testament to the discipline, technical expertise, and deep focus required to engineer software that works flawlessly under pressure.',
+}
+
+export const hub = {
+  label: 'Collaborative Hub',
+  title: 'Collaborative Hub',
+  intro: [
+    'Welcome to the collaborative hub of my portfolio. While individual execution is vital, groundbreaking software is rarely built in a vacuum. This gallery highlights the synergy, shared problem-solving, and cross-functional engineering that drive my projects from conceptual wireframes to production-ready deployments.',
+    'Here, you will find a curated selection of initiatives defined by collective innovation—working alongside talented software developers, programmers, and engineers to architecture robust systems, optimize workflows, and solve complex technical challenges.',
+  ],
+  pointsLead: 'Key areas highlighted in this collection include:',
+  points: [
+    { label: 'Cross-Functional Architecture', text: 'Aligning diverse technical minds to build scalable, modular codebases and custom system frameworks.' },
+    { label: 'Agile Problem Solving', text: 'Joint debugging, rapid prototyping, and peer reviews that elevate code quality and security.' },
+    { label: 'Integration & Synergy', text: 'Bridging the gap between creative technical vision and strict engineering execution.' },
+  ],
+  close: 'Every project featured here is a testament to what can be achieved when distinct technical strengths unite under a shared goal. Explore the workflows, the repositories, and the collective milestones that define my approach to collaborative development.',
+  photos: [
+    'Reviewing system architecture with developers in an open-plan engineering office',
+    'Leading a research and development session with a team of engineers and scientists',
+    'Discussing VR hardware and circuit boards with engineers on an electronics floor',
+    'Walking an automotive engineering team through a vehicle systems interface on the production line',
+    'Working through code with a group of developers around a shared screen',
+  ],
+}
+
 export const venture = {
-  name: 'Cherry Computer LTD',
+  name: 'CHERRY COMPUTER LTD',
   status: 'Upcoming start-up',
   text: [
-    'Cherry Computer LTD is an upcoming technology venture dedicated to redefining modern computing through custom systems architecture, proprietary programming frameworks, and advanced software ecosystems.',
-    "Driven by a passion for low-level innovation, scalable developer tools, and intelligent automation, Cherry Computer LTD bridges the gap between raw computing capabilities and next-generation software execution, building the foundational tech stack for tomorrow's digital infrastructure.",
+    'CHERRY COMPUTER LTD is an upcoming technology venture dedicated to redefining modern computing through custom systems architecture, proprietary programming frameworks, and advanced software ecosystems.',
+    "Driven by a passion for low-level innovation, scalable developer tools, and intelligent automation, CHERRY COMPUTER LTD bridges the gap between raw computing capabilities and next-generation software execution, building the foundational tech stack for tomorrow's digital infrastructure.",
   ],
 }
 
